@@ -8,7 +8,7 @@
       background-color: #f2f2f2;
       background-image: url(/img/mdc-partners-6667621_1594995307.jpg);
       background-size: cover;
-    
+      background-repeat: no-repeat;
     }
 
     .container {
@@ -58,14 +58,37 @@
     .btn:hover {
       background-color: #45a049;
     }
+
+    /* Layout responsivo - telas até 414 pixels */
+    @media (max-width: 414px) {
+      .container {
+        width: 90%;
+      }
+      .input-group input {
+        width: 100%;
+      }
+    }
+
+    /* Layout responsivo - telas até 768 pixels */
+    @media (min-width: 415px) and (max-width: 768px) {
+      .container {
+        width: 70%;
+      }
+    }
+
+    /* Layout responsivo - telas acima de 768 pixels */
+    @media (min-width: 769px) {
+      .container {
+        width: 300px;
+      }
+    }
   </style>
 </head>
 <body>
-    
   <div class="container">
     <h2>Login</h2>
     <div class="input-group">
-      <label for="username",>Usuário:</label>
+      <label for="username">Usuário:</label>
       <input type="text" id="username" required placeholder="digite seu usuário">
     </div>
     <div class="input-group">
@@ -80,7 +103,7 @@
       { username: 'admin', password: 'admin' },
       { username: 'will', password: '2223' },
       { username: 'usuario2', password: 'senha2' },
-      { username: 'roman' , password: 'roman'}
+      { username: 'roman', password: 'roman' }
       // adicione mais usuários aqui
     ];
 
@@ -95,13 +118,13 @@
 
       if (usuarioEncontrado) {
         alert('Login bem-sucedido!');
-        sessionStorage.setItem('isLoggedIn','true');
-        location.href ='/home.html';
+        sessionStorage.setItem('isLoggedIn', 'true');
+        location.href = '/home.html';
       } else {
         alert('Nome de usuário ou senha incorretos. Tente novamente.');
       }
     }
-    
+
     function handleKeyDown(event) {
       if (event.keyCode === 13) {
         login();
