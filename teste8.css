@@ -1,0 +1,15 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilo para alternar o fundo das linhas do histórico */
+.historico-item:nth-child(odd) {
+    background-color: #a5a9ac; /* Cinza claro */
+  }
+  
+  .historico-item:nth-child(even) {
+    background-color: #f8f0f0; /* Branco */
+  }
+ 
+  .form-control.input-50 {
+    width: 50%;
+  }
