@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Inclusão do arquivo CSS de estilização -->
+  <link rel="stylesheet" href="home.css">
+  
+  <!-- Boxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://kit.fontawesome.com/7708034ae2.css" crossorigin="anonymous">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+
+  <!-- Barra de navegação -->
+  <nav class="sidebar close">
+    
+    <header>
+      <div class="image-text">
+        <img class="round-image" src="/img/mdc.jpeg" alt="Imagem Redonda">
+        <div class="text logo-text">
+          <span class="name">MDC Partners</span>
+          <span class="profession">Teste</span>
+        </div>
+      </div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <!-- Campo de busca -->
+        <li class="search-box">
+          <input type="text" id="search-input" placeholder="Buscar....">
+        </li>
+
+        <!-- Opções de menu -->
+        <ul class="menu-links" id="menu-links">
+          <li class="nav-link">
+            <a href="/teste1.html">
+            <i class='bx bx-detail icon'></i>
+              <span class="text nav-text">Teste 1</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="/teste2.html">
+            <i class='bx bx-detail icon'></i>
+              <span class="text nav-text">Teste 2</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="/teste3.html">
+            <i class='bx bx-detail icon'></i>
+              <span class="text nav-text">Teste 3</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="/teste4.html">
+            <i class='bx bx-detail icon'></i>
+              <span class="text nav-text">Teste 4</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="/teste5.html">
+            <i class='bx bx-detail icon'></i>
+              <span class="text nav-text">Teste 5</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="/teste6.html">
+            <i class='bx bx-detail icon'></i>
+              <span class="text nav-text">Teste 6</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="/teste7.html">
+            <i class='bx bx-detail icon'></i>
+              <span class="text nav-text">Teste 7</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="/teste8.html">
+            <i class='bx bx-detail icon'></i>
+              <span class="text nav-text">Teste 8</span>
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <!-- Botão de logout -->
+        <li class="">
+          <a href="/index.html">
+            <i class='bx bx-log-out icon'></i>
+            <button onclick="logout()"></button>
+          </a>
+        </li>
+        <!-- Alternância entre modo claro/escuro -->
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+          
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção principal -->
+  <section class="home">
+    <div class="text"> Node Developer MID Level</div>
+  </section>
+  <main>
+    
+
+    <!-- Seção principal -->
+<section class="home">
+  <div class="text-principal">
+    <h1>Teste de Lógica</h1>
+    <p>Exercise 1: Simple Calculator
+        Create a calculator that takes two numbers and an operator (+, -, *, /) and returns the result
+        of the operation.
+        </p>
+        <br>
+    <p>Exercise 2: Prime Numbers
+        Write a function that checks whether a number is prime or not. Then create a program that
+        prints the first 10 prime numbers.
+        </p>
+    <br>
+
+    <p>
+        Exercise 3: Factorial
+        Write a function to calculate the factorial of a number. Next, create a program that allows the
+        user to enter a number and displays the corresponding factorial.
+         
+    </p>
+    <br>
+    <p>
+        Exercise 4: Palindrome
+        Create a function that checks whether a word is a palindrome (that is, whether it reads the
+        same backwards and forwards). The program must ask the user for a word and inform
+        whether or not it is a palindrome.
+          
+    </p>
+    <br>
+    <p>
+        Exercise 5: Table
+Create a program that receives a number from the user and displays the table of that
+number, from 1 to 10.
+
+    </p>
+    <br>
+
+    <p>
+        Exercise 6: Vowel Counter
+Create a function that counts the number of vowels in a string. The program should ask the
+user for a sentence and display how many vowels it has.
+
+    </p>
+    <br>
+    <p>
+        Exercise 7: Grade Average
+Create a program that takes a student's grades in three different subjects and calculates the
+average of the grades. Then display the calculated average.
+
+    </p>
+    <br>
+
+    <p>
+        Exercise 8: Interest Calculation
+Create a function that calculates the final value of an investment based on initial capital,
+interest rate, and investment time (in months). The program must prompt the user for these
+values and display the final value.
+    </p>
+  </div>
+
+
+</section>
+
+
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 wiLLSoftFarma. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Código JavaScript -->
+  <script>
+    const body = document.querySelector('body');
+    const sidebar = body.querySelector('nav.sidebar');
+    const toggle = body.querySelector(".toggle");
+    const searchIcon = body.querySelector("#search-icon");
+    const searchInput = body.querySelector("#search-input");
+    const menuLinks = body.querySelector("#menu-links");
+    const modeSwitch = body.querySelector(".toggle-switch");
+    const modeText = body.querySelector(".mode-text");
+
+    // Evento de clique para abrir/fechar a barra de navegação
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+
+    // Evento de clique para abrir a barra de navegação e focar no campo de busca
+    searchIcon.addEventListener("click", () => {
+      sidebar.classList.remove("close");
+      searchInput.focus();
+    });
+
+    // Evento de input para filtrar itens do menu de acordo com o termo de busca
+    searchInput.addEventListener("input", () => {
+      searchItems();
+    });
+
+    // Evento de clique para alternar entre modo claro/escuro
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+      } else {
+        modeText.innerText = "Dark mode";
+      }
+    });
+
+    // Função para filtrar itens do menu de acordo com o termo de busca
+    function searchItems() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const items = menuLinks.getElementsByClassName("nav-link");
+
+      for (let i = 0; i < items.length; i++) {
+        const text = items[i].textContent.toLowerCase();
+        if (text.includes(searchTerm)) {
+          items[i].style.display = "block";
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+    }
+
+    // Função para realizar logout
+    function logout() {
+      sessionStorage.removeItem('isLoggedIn');
+      alert('Logout realizado com sucesso!');
+      location.href = '/index.html';
+    }
+
+    // Função para verificar se o usuário está logado
+    function checkLoggedIn() {
+      var isLoggedIn = sessionStorage.getItem('isLoggedIn');
+      if (isLoggedIn !== 'true') {
+        location.href = '/index.html';
+      }
+    }
+
+    // Verificar o login ao carregar a página
+    checkLoggedIn();
+  </script>
+</body>
+</html>
