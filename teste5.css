@@ -1,0 +1,65 @@
+/* Estilos gerais */
+
+body {
+    font-family: 'Poppins', sans-serif;}
+
+/* Estilos responsivos */
+
+@media (max-width: 414px) {
+    /* Adicione estilos para telas com até 414 pixels */
+    #numberInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin: 5px 0;
+    }
+
+    .form-label {
+        margin-bottom: 0;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+    /* Adicione estilos para telas entre 415 e 768 pixels */
+}
+
+@media (min-width: 769px) {
+    /* Adicione estilos para telas acima de 768 pixels */
+    #numberInput {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn {
+        margin: 5px;
+    }
+    .btn-secondary{
+        background:#03a356 ;
+    }
+
+    .form-label {
+        margin-bottom: 0;
+        padding-left: 110px;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+    }
+}
+
