@@ -1,0 +1,28 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* Responsividade até 414 pixels */
+@media (max-width: 414px) {
+    /* Insira aqui as regras de estilo para telas até 414 pixels */
+  }
+  
+  /* Responsividade até 768 pixels */
+  @media (min-width: 415px) and (max-width: 768px) {
+    /* Insira aqui as regras de estilo para telas entre 415 e 768 pixels */
+  }
+  
+  /* Responsividade acima de 768 pixels */
+  @media (min-width: 769px) {
+    /* Insira aqui as regras de estilo para telas acima de 768 pixels */
+  }
+  
+  /* Adicionar cor verde para palavras verdadeiras (palíndromos) */
+  .text-success {
+    color: green;
+  }
+  
+  /* Adicionar cor vermelha para palavras falsas (não palíndromos) */
+  .text-danger {
+    color: red;
+  }
+  

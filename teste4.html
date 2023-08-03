@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Palíndromo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="teste4.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-5">Verificador de Palíndromo</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4 mt-4">
+        <form id="palindrome-form">
+          <div class="form-group">
+            <label for="word">Digite uma palavra:</label>
+            <input type="text" class="form-control" id="word" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Verificar</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+        <div id="history" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="teste4.js"></script>
+</body>
+</html>
