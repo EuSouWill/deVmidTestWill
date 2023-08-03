@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificar Números Primos</title>
+  <link rel="stylesheet" href="teste2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Verificar Números Primos</h1>
+  <div class="input-container">
+    <label for="numberToCheck">Digite um número:</label>
+    
+    <input type="number" id="numberToCheck" min="1">
+    <button id="checkBtn">Verificar</button>
+    <button id="historyBtn">Histórico</button>
+  </div>
+
+  <div id="result">
+    <!-- O resultado da verificação será adicionado dinamicamente aqui -->
+  </div>
+
+  <div id="history">
+    <!-- O histórico de números digitados será adicionado dinamicamente aqui -->
+    <table id="historyTable">
+      <thead>
+        <tr>
+          <th>Números Digitados</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Os números digitados serão adicionados dinamicamente aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="teste2.js"></script>
+</body>
+</html>

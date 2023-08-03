@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;   
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result {
+    font-size: 36x;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+  
+  /* Estilizando a última linha horizontal */
+  .buttons > :nth-child(17) {
+    grid-column: span 2;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+  
+  .btn{
+    font-size: 40px;
+  }
+  
+  /* Adicionando bordas entre os números */
+  button:not(.operator-btn) {
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilo dos botões de operadores */
+  button.operator-btn {
+    background-color: #f79618; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+  }
+  
+  /* Responsividade para telas com largura até 414 pixels (mobile) */
+  @media (max-width: 414px) {
+    .calculator {
+      width: 90%;
+    }
+  }
+  
+  /* Responsividade para telas com largura até 768 pixels (tablet) */
+  @media (max-width: 768px) {
+    .calculator {
+      width: 70%;
+    }
+  }
+  
