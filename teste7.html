@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Média de Notas</title>
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="teste7.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Calculadora de Média de Notas</h2>
+    <form>
+      <div class="form-group">
+        <label for="nota1">Disciplina/Nota  1:</label>
+        <input type="number" class="form-control" id="nota1" step="0.01" min="0" max="10" required>
+      </div>
+      <div class="form-group">
+        <label for="nota2">Disciplina/Nota 2:</label>
+        <input type="number" class="form-control" id="nota2" step="0.01" min="0" max="10" required>
+      </div>
+      <div class="form-group">
+        <label for="nota3">Disciplina/Nota 3:</label>
+        <input type="number" class="form-control" id="nota3" step="0.01" min="0" max="10" required>
+      </div>
+      <button type="button" class="btn btn-primary" id="calcularBtn">Calcular Média</button>
+    </form>
+    <div class="mt-3">
+      <h4>Média Calculada:</h4>
+      <p id="mediaResult"></p>
+    </div>
+    <div class="mt-3">
+      <h4>Histórico de Médias:</h4>
+      <ul id="historicoMedias"></ul>
+    </div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="teste7.js"></script> 
+</html>

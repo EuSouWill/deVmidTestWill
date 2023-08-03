@@ -1,0 +1,38 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tela até 414 pixels */
+@media (max-width: 414px) {
+    /* Adicione as regras CSS para ajustar a aparência em telas menores que 414 pixels */
+    .form-group {
+      width: 100%;
+    }
+  }
+  
+  /* Tela de 415 a 768 pixels */
+  @media (min-width: 415px) and (max-width: 768px) {
+    /* Adicione as regras CSS para ajustar a aparência em telas entre 415 e 768 pixels */
+    .form-group {
+      width: 100%;
+    }
+  }
+  
+  /* Tela acima de 768 pixels */
+  @media (min-width: 769px) {
+    /* Adicione as regras CSS para ajustar a aparência em telas maiores que 768 pixels */
+    .form-group {
+      width: 50%;
+    }
+  }
+  
+  /* Estilo para média reprovada */
+  .reprovado {
+    color: red;
+    font-weight: bold;
+  }
+
+  .aprovado{
+    color: green;
+    font-weight: bold;
+  }
