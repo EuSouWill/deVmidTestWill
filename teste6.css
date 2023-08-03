@@ -1,0 +1,33 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 414px) {
+    /* Estilos para telas até 414 pixels */
+  }
+  
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    /* Estilos para telas entre 415 pixels e 768 pixels */
+  }
+  
+  @media screen and (min-width: 769px) {
+    /* Estilos para telas acima de 768 pixels */
+  }
+  
+  .vowel {
+    color: red;
+  }
+  
+  .vowel-count {
+    color: purple;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
