@@ -12,15 +12,16 @@ body {
   
   .calculator {
     text-align: center;
-    background-color: #ffffff;
-    border-radius: 5px;   
+    background-color: #000;
+    border-radius: 5px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .result {
-    font-size: 36x;
+    font-size: 30px;
     font-weight: bold;
+    color: #fff;
     margin-bottom: 10px;
   }
   
@@ -37,23 +38,30 @@ body {
   
   button {
     padding: 20px;
-    font-size: 16px;
+    font-size: 24px;
     border-radius: 50px;
+    color: #fff;
+    border: none;
   }
   
-  .btn{
-    font-size: 40px;
+  .btn-number {
+    background-color: #444;
+    border: none;
   }
   
-  /* Adicionando bordas entre os números */
-  button:not(.operator-btn) {
-    border: 1px solid #ccc;
+  .btn-operator {
+    background-color: #f79618;
+    border: none;
   }
   
-  /* Estilo dos botões de operadores */
-  button.operator-btn {
-    background-color: #f79618; /* Cor de fundo */
-    color: #ffffff; /* Cor do texto */
+  .btn-clear {
+    background-color: #a8a5a5;
+  }
+  
+  /* Adicionando destaque ao botão pressionado */
+  .btn.highlight {
+    background-color: #ffc107;
+    color: #000;
   }
   
   /* Responsividade para telas com largura até 414 pixels (mobile) */

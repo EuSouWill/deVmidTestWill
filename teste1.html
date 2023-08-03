@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Calculadora Simples</title>
@@ -10,22 +10,22 @@
     <div class="calculator">
       <div class="result" id="result">0</div>
       <div class="buttons">
-        <button class="btn" onclick="appendNumber('7')">7</button>
-        <button class="btn" onclick="appendNumber('8')">8</button>
-        <button class="btn" onclick="appendNumber('9')">9</button>
-        <button class="btn operator-btn" onclick="setOperator('+')">+</button>
-        <button class="btn" onclick="appendNumber('4')">4</button>
-        <button class="btn" onclick="appendNumber('5')">5</button>
-        <button class="btn" onclick="appendNumber('6')">6</button>
-        <button class="btn operator-btn" onclick="setOperator('-')">-</button>
-        <button class="btn" onclick="appendNumber('1')">1</button>
-        <button class="btn" onclick="appendNumber('2')">2</button>
-        <button class="btn" onclick="appendNumber('3')">3</button>
-        <button class="btn operator-btn" onclick="setOperator('*')">*</button>
-        <button class="btn" onclick="appendNumber('0')">0</button>
-        <button class="btn operator-btn" onclick="calculate()">=</button>
-        <button class="btn operator-btn" onclick="setOperator('/')">/</button>
-        <button class="btn" onclick="clearCalculator()">C</button>
+        <button class="btn btn-number" value="7" onclick="appendNumber('7')" title="7">7</button>
+        <button class="btn btn-number" value="8" onclick="appendNumber('8')" title="8">8</button>
+        <button class="btn btn-number" value="9" onclick="appendNumber('9')" title="9">9</button>
+        <button class="btn btn-operator" value="+" onclick="setOperator('+')" title="soma">+</button>
+        <button class="btn btn-number" value="4" onclick="appendNumber('4')" title="4" >4</button>
+        <button class="btn btn-number" value="5" onclick="appendNumber('5')" title="5" >5</button>
+        <button class="btn btn-number" value="6" onclick="appendNumber('6')" title="6">6</button>
+        <button class="btn btn-operator" value="-" onclick="setOperator('-')" title="subtração">-</button>
+        <button class="btn btn-number" value="1" onclick="appendNumber('1')" title="1">1</button>
+        <button class="btn btn-number" value="2" onclick="appendNumber('2')" title="2">2</button>
+        <button class="btn btn-number" value="3" onclick="appendNumber('3')" title="3">3</button>
+        <button class="btn btn-operator" value="*" onclick="setOperator('*')" title="multiplicação">X</button>
+        <button class="btn btn-number" value="0" onclick="appendNumber('0')" title="0">0</button>
+        <button class="btn btn-operator" value="=" onclick="calculate()" title="resultado">=</button>
+        <button class="btn btn-operator" value="/" onclick="setOperator('/')" title="divisão">/</button>
+        <button class="btn btn-clear" onclick="clearCalculator()" title="limpar">C</button>
       </div>
     </div>
   </div>
