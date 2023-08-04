@@ -22,16 +22,17 @@ function checkNumberIsPrime() {
   const numberToCheck = parseInt(numberToCheckInput.value);
 
   if (isNaN(numberToCheck)) {
-    resultDiv.innerHTML = 'Por favor, digite um número válido.';
+    resultDiv.innerHTML = 'Please enter a valid number.';
     return;
   }
 
   const isNumberPrime = isPrime(numberToCheck);
 
   if (isNumberPrime) {
-    resultDiv.innerHTML = `${numberToCheck} é um número primo.`;
+    resultDiv.innerHTML = `${numberToCheck} is a prime number.`;
   } else {
-    resultDiv.innerHTML = `${numberToCheck} não é um número primo.`;
+    resultDiv.innerHTML = `${numberToCheck} 
+    is not a prime number.`;
   }
 
   primesList.push(numberToCheck); // Adicionar o número verificado ao histórico
@@ -41,7 +42,7 @@ function checkNumberIsPrime() {
 
 function showHistory() {
   if (primesList.length === 0) {
-    historyTableBody.innerHTML = '<tr><td>Nenhum número foi digitado ainda.</td></tr>';
+    historyTableBody.innerHTML = '<tr><td>No number has been entered yet.</td></tr>';
   } else {
     historyTableBody.innerHTML = ''; // Limpar a tabela antes de exibir novamente
 
@@ -63,10 +64,10 @@ numberToCheckInput.addEventListener('keydown', (event) => {
   }
 });
 
-// Verificar ao clicar no botão "Verificar"
+// Verificar ao clicar no botão "check"
 checkBtn.addEventListener('click', checkNumberIsPrime);
 
-// Exibir histórico ao pressionar Enter no botão "Histórico"
+// Exibir histórico ao pressionar Enter no botão "Historic"
 historyBtn.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     showHistory();
@@ -74,5 +75,10 @@ historyBtn.addEventListener('keydown', (event) => {
   }
 });
 
-// Exibir histórico ao clicar no botão "Histórico"
+// Exibir histórico ao clicar no botão "Historic"
 historyBtn.addEventListener('click', showHistory);
+
+  // função goBack para retornar a página anterior
+  function goBack() {
+    window.history.back();
+  }

@@ -1,5 +1,18 @@
 /* Estilo padrão para telas acima de 768 pixels */
+.back-button {
+  background-color: #695CFE;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: -559px;
+  margin-top: -900px;
+  
+}
 body {
+  
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
@@ -61,6 +74,7 @@ body {
   
   /* Responsividade para telas de até 768 pixels */
   @media screen and (max-width: 768px) {
+    
     body {
       padding: 10px;
     }
@@ -85,6 +99,21 @@ body {
   
   /* Responsividade para telas de até 414 pixels */
   @media screen and (max-width: 414px) {
+    .back-button {
+      display: block; /* Mostra o botão em telas menores ou iguais a 414 pixels */
+      /* Estilos para o botão de retorno em telas de 414 pixels */
+      /* Adicione os estilos desejados para o botão de retorno aqui */
+      /* Por exemplo: */
+      background-color: #695CFE;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 50px;
+      cursor: pointer;
+     
+    }
+
     .input-container input {
       width: 100%;
       margin-bottom: 10px;
@@ -98,6 +127,7 @@ body {
     #result, #history {
       font-size: 14px;
     }
+    
   }
   
   /* Estilo da tabela de histórico */
@@ -125,3 +155,18 @@ body {
     background-color: #fff; /* Cor de fundo branca para linhas ímpares */
   }
   
+
+  .footer-content{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 14px;
+}
+

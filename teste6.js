@@ -11,7 +11,7 @@ document.getElementById("countButton").addEventListener("click", function() {
   function countVowelsAndUpdateResult() {
     const inputText = document.getElementById("inputText").value;
     const vowelCount = countVowels(inputText);
-    document.getElementById("result").innerText = `A frase possui ${vowelCount} vogais.`;
+    document.getElementById("result").innerText = `The sentence has ${vowelCount} vowels.`;
   
     // Salva a frase no histórico
     addToHistory(inputText);
@@ -53,7 +53,8 @@ document.getElementById("countButton").addEventListener("click", function() {
       const listItem = document.createElement("li");
       const vowelHighlightedText = highlightVowels(history[i]);
       const vowelCount = countVowels(history[i]);
-      listItem.innerHTML = `${vowelHighlightedText}<span class="vowel-count">(${vowelCount} vogais)</span>`;
+      listItem.innerHTML = `${vowelHighlightedText}<span class="vowel-count">(${vowelCount} 
+        vowels)</span>`;
       historyList.appendChild(listItem);
     }
   }
@@ -84,3 +85,7 @@ document.getElementById("countButton").addEventListener("click", function() {
     }
   });
   
+   // função goBack para retornar a página anterior
+   function goBack() {
+    window.history.back();
+  }

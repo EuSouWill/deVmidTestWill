@@ -17,7 +17,7 @@ function addToHistory(word) {
 // Função para exibir o histórico de palavras na página
 function displayHistory() {
   const historyElement = document.getElementById('history');
-  historyElement.innerHTML = '<h2>Histórico de Palavras Digitadas:</h2>';
+  historyElement.innerHTML = '<h2>Historic of Typed Words:</h2>';
   wordHistory.forEach((word, index) => {
     const isPalindrome = checkPalindrome(word);
     const palindromoClass = isPalindrome ? 'text-success' : 'text-danger';
@@ -42,11 +42,16 @@ document.getElementById('palindrome-form').addEventListener('submit', function(e
   const isPalindrome = checkPalindrome(word);
 
   if (isPalindrome) {
-    resultElement.innerHTML = `<p class="text-success">A palavra "${word}" é um palíndromo!</p>`;
+    resultElement.innerHTML = `<p class="text-success">The word "${word}" is a palindrome!</p>`;
   } else {
-    resultElement.innerHTML = `<p class="text-danger">A palavra "${word}" não é um palíndromo.</p>`;
+    resultElement.innerHTML = `<p class="text-danger">The word "${word}" it's not a palindrome.</p>`;
   }
 
   addToHistory(word); // Adicionar a palavra ao histórico
   wordInput.value = ''; // Limpar o campo de entrada após verificar
 });
+
+  // função goBack para retornar a página anterior
+  function goBack() {
+    window.history.back();
+  }

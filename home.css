@@ -117,8 +117,13 @@ body.dark {
 .sidebar .icon {
     color: var(--text-color);
     transition: var(--tran-03);
+    
 }
 
+body > nav > div > div.bottom-content > li > a{
+   
+    margin-bottom: 50px;
+}
 .sidebar .text {
     font-size: 17px;
     font-weight: 500;
@@ -199,25 +204,9 @@ body.dark .sidebar header .toggle {
     margin-top: 40px;
 }
 
-.sidebar li.search-box {
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    cursor: pointer;
-    transition: var(--tran-05);
-}
 
-.sidebar li.search-box input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: var(--primary-color-light);
-    color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    transition: var(--tran-05);
-}
+
+
 
 .sidebar li a {
     list-style: none;
@@ -258,33 +247,15 @@ body.dark .sidebar li a:hover .text {
     display: none;
 }
 
-.sidebar .menu-bar .mode {
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    position: relative;
-    transition: var(--tran-05);
-}
 
-.menu-bar .mode .sun-moon {
-    height: 50px;
-    width: 60px;
-}
 
-.mode .sun-moon i {
-    position: absolute;
-}
 
-.mode .sun-moon i.sun {
-    opacity: 0;
-}
 
-body.dark .mode .sun-moon i.sun {
-    opacity: 1;
-}
 
-body.dark .mode .sun-moon i.moon {
-    opacity: 0;
-}
+
+
+
+
 
 .menu-bar .bottom-content .toggle-switch {
     position: absolute;

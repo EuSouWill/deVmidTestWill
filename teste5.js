@@ -42,3 +42,9 @@ document.getElementById('numberInput').addEventListener('keyup', function(event)
         calculateTabuada();
     }
 });
+
+
+  // função goBack para retornar a página anterior
+  function goBack() {
+    window.history.back();
+  }

@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
-  <title>Verificar Números Primos</title>
+  <title>Prime Numbers</title>
   <link rel="stylesheet" href="teste2.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
 </head>
+<header>
+  <button class="back-button" onclick="goBack()">Voltar</button>
+
+</header>
+
 <body>
-  <h1>Verificar Números Primos</h1>
+  
+  <h1>Exercise 2: Prime Numbers</h1>
   <div class="input-container">
-    <label for="numberToCheck">Digite um número:</label>
+    <label for="numberToCheck">Enter a number:</label>
     
     <input type="number" id="numberToCheck" min="1">
-    <button id="checkBtn">Verificar</button>
-    <button id="historyBtn">Histórico</button>
+    <button id="checkBtn">check</button>
+    <button id="historyBtn">Historic</button>
   </div>
 
   <div id="result">
@@ -26,7 +32,8 @@
     <table id="historyTable">
       <thead>
         <tr>
-          <th>Números Digitados</th>
+          <th>typed number
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -34,7 +41,13 @@
       </tbody>
     </table>
   </div>
-
+ <!-- Rodapé -->
+ <footer>
+  <div class="footer-content">
+    <p>&copy; 2023 William Régis. Todos os direitos reservados.</p>
+  </div>
+</footer>
   <script src="teste2.js"></script>
+  
 </body>
 </html>

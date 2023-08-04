@@ -65,3 +65,8 @@ function updateDisplayLarge(value) {
   resultElement.textContent = value;
   resultElement.classList.add('result-large'); // Adicionamos a classe result-large para ter uma fonte maior
 }
+
+    // função goBack para retornar a página anterior
+    function goBack() {
+      window.history.back();
+    }

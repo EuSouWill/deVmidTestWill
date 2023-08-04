@@ -36,66 +36,63 @@
     </header>
     <div class="menu-bar">
       <div class="menu">
-        <!-- Campo de busca -->
-        <li class="search-box">
-          <input type="text" id="search-input" placeholder="Buscar....">
-        </li>
+     
 
         <!-- Opções de menu -->
         <ul class="menu-links" id="menu-links">
           <li class="nav-link">
             <a href="/teste1.html">
             <i class='bx bx-detail icon'></i>
-              <span class="text nav-text">Teste 1</span>
+              <span class="text nav-text">Exercise 1</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="/teste2.html">
             <i class='bx bx-detail icon'></i>
-              <span class="text nav-text">Teste 2</span>
+              <span class="text nav-text">Exercise 2</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="/teste3.html">
             <i class='bx bx-detail icon'></i>
-              <span class="text nav-text">Teste 3</span>
+              <span class="text nav-text">Exercise 3</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="/teste4.html">
             <i class='bx bx-detail icon'></i>
-              <span class="text nav-text">Teste 4</span>
+              <span class="text nav-text">Exercise 4</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="/teste5.html">
             <i class='bx bx-detail icon'></i>
-              <span class="text nav-text">Teste 5</span>
+              <span class="text nav-text">Exercise 5</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="/teste6.html">
             <i class='bx bx-detail icon'></i>
-              <span class="text nav-text">Teste 6</span>
+              <span class="text nav-text">Exercise 6</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="/teste7.html">
             <i class='bx bx-detail icon'></i>
-              <span class="text nav-text">Teste 7</span>
+              <span class="text nav-text">Exercise 7</span>
             </a>
           </li>
 
           <li class="nav-link">
             <a href="/teste8.html">
             <i class='bx bx-detail icon'></i>
-              <span class="text nav-text">Teste 8</span>
+              <span class="text nav-text">Exercise 8</span>
             </a>
           </li>
 
@@ -108,23 +105,9 @@
         <li class="">
           <a href="/index.html">
             <i class='bx bx-log-out icon'></i>
-            <button onclick="logout()"></button>
-          </a>
+            <button onclick="logout()"></button></a>
         </li>
-        <!-- Alternância entre modo claro/escuro -->
-        <li class="mode">
-          <div class="sun-moon">
-            <i class='bx bx-moon icon moon'></i>
-            <i class='bx bx-sun icon sun'></i>
-          </div>
-          <span class="mode-text text">Dark mode</span>
-
-          <div class="toggle-switch">
-            <span class="switch"></span>
-          </div>
-          
-        </li>
-      </div>
+        
     </div>
   </nav>
 
@@ -138,7 +121,7 @@
     <!-- Seção principal -->
 <section class="home">
   <div class="text-principal">
-    <h1>Teste de Lógica</h1>
+    <h1>Exercise</h1>
     <p>Exercise 1: Simple Calculator
         Create a calculator that takes two numbers and an operator (+, -, *, /) and returns the result
         of the operation.
@@ -204,7 +187,7 @@ values and display the final value.
   <!-- Rodapé -->
   <footer>
     <div class="footer-content">
-      <p>&copy; 2023 wiLLSoftFarma. Todos os direitos reservados.</p>
+      <p>&copy; 2023 William Régis. Todos os direitos reservados.</p>
     </div>
   </footer>
 
@@ -224,41 +207,8 @@ values and display the final value.
       sidebar.classList.toggle("close");
     });
 
-    // Evento de clique para abrir a barra de navegação e focar no campo de busca
-    searchIcon.addEventListener("click", () => {
-      sidebar.classList.remove("close");
-      searchInput.focus();
-    });
+   
 
-    // Evento de input para filtrar itens do menu de acordo com o termo de busca
-    searchInput.addEventListener("input", () => {
-      searchItems();
-    });
-
-    // Evento de clique para alternar entre modo claro/escuro
-    modeSwitch.addEventListener("click", () => {
-      body.classList.toggle("dark");
-      if (body.classList.contains("dark")) {
-        modeText.innerText = "Light mode";
-      } else {
-        modeText.innerText = "Dark mode";
-      }
-    });
-
-    // Função para filtrar itens do menu de acordo com o termo de busca
-    function searchItems() {
-      const searchTerm = searchInput.value.toLowerCase();
-      const items = menuLinks.getElementsByClassName("nav-link");
-
-      for (let i = 0; i < items.length; i++) {
-        const text = items[i].textContent.toLowerCase();
-        if (text.includes(searchTerm)) {
-          items[i].style.display = "block";
-        } else {
-          items[i].style.display = "none";
-        }
-      }
-    }
 
     // Função para realizar logout
     function logout() {
@@ -277,6 +227,11 @@ values and display the final value.
 
     // Verificar o login ao carregar a página
     checkLoggedIn();
+
+    // função goBack para retornar a página anterior
+function goBack() {
+    window.history.back();
+  }
   </script>
 </body>
 </html>
