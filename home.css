@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
@@ -366,4 +367,11 @@ body.dark .toggle-switch .switch:before {
     margin: 0 auto;    
   }
 
-  
+  .element.style{
+    margin: 100px;
+  }
+
+  .style {
+    padding-top: 110px;
+    margin: 100px;
+}
