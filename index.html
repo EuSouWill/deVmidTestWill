@@ -63,9 +63,8 @@
     @media (max-width: 414px) {
       .container {
         width: 90%;
-      }
-      .input-group input {
-        width: 100%;
+        margin-top: 50px;
+        padding: 10px;
       }
     }
 
@@ -73,6 +72,8 @@
     @media (min-width: 415px) and (max-width: 768px) {
       .container {
         width: 70%;
+        margin-top: 80px;
+        padding: 15px;
       }
     }
 
@@ -88,14 +89,14 @@
   <div class="container">
     <h2>Login</h2>
     <div class="input-group">
-      <label for="username">Usuário:</label>
-      <input type="text" id="username" required placeholder="digite seu usuário">
+      <label for="username">User:</label>
+      <input type="text" id="username" required placeholder="Username ">
     </div>
     <div class="input-group">
-      <label for="password">Senha:</label>
-      <input type="password" id="password" required placeholder="digite sua senha" onkeydown="handleKeyDown(event)">
+      <label for="password">Password:</label>
+      <input type="password" id="password" required placeholder="Password" onkeydown="handleKeyDown(event)">
     </div>
-    <button class="btn" onclick="login()">Entrar</button>
+    <button class="btn" onclick="loginWithDelay()">Login</button>
   </div>
 
   <script>
@@ -117,7 +118,6 @@
       });
 
       if (usuarioEncontrado) {
-        ;
         sessionStorage.setItem('isLoggedIn', 'true');
         location.href = '/home.html';
       } else {
@@ -125,9 +125,14 @@
       }
     }
 
+    function loginWithDelay() {
+      // Simula o atraso de 1 segundo antes de chamar a função de login
+      setTimeout(login, 1000);
+    }
+
     function handleKeyDown(event) {
       if (event.keyCode === 13) {
-        login();
+        loginWithDelay();
       }
     }
   </script>
