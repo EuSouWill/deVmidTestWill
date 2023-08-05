@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: -150px;
   }
   
   .calculator {
@@ -103,4 +104,28 @@ body {
   font-size: 16px;
   border-radius: 50px;
   cursor: pointer;
+}
+
+/* Estilos do botão de download */
+h3{
+  text-align: center;
+}
+.cvwill {
+  text-decoration: none;
+  text-align: center;
+}
+
+.download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #695CFE;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #4C46B8;
 }
